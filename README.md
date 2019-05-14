@@ -3,7 +3,7 @@ This repository contains python scripts for analyzing population data from poole
 
 ## AF_per_pool.py
 Calculate allele frequency for each sample given AD format out of vcftools.
-Allele frequency is based read count.
+Allele frequency is based read count.  
 python AF_per_pool.py file.AD.FORMAT > file.freq
 
 ## chi_square_contrast.py
@@ -29,11 +29,11 @@ freq is the corrected allele frequency file (For example, 60.Neff.freq)
 Coorect allele depth based on sample size
 Neff_correction.py sample.list pool.AD.FORMAT > pool.Neff.freq
 Example of sample list:
-ID      Size
-A   47
-B 50
-C  49
-D   35 
-...
+ID      Size  
+A   47  
+B 50  
+C  49  
+D   35  
+...  
 
 
