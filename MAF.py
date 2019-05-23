@@ -50,7 +50,7 @@ with open(AD) as ad:
         ref = 0
         alt = 0
         for x in range(len(l)):
-            if x in sample_index:
+            if x in sample_index and l[x] != ",":
                 x = [int(n) for n in l[x].split(",")]
                 ref += x[0]
                 alt += x[1]
@@ -58,4 +58,5 @@ with open(AD) as ad:
         # MAF
         if ref + alt != 0:
             MAF = round(min(ref, alt)/(ref + alt),3)
-            print(CHR, POS, MAF, sep="\t")
+            if MAF > 0:
+                print(CHR, POS, MAF, sep="\t")
