@@ -37,4 +37,8 @@ C  49
 D   35  
 ...  
 
-
+## MAF.py
+Calculate minor allele frequency for certain samples of pooled data.  
+MAF.py --pop POP --AD AD  
+The following arguments are required: --pop, --AD  
+--pop flag can be specified multiple times  
